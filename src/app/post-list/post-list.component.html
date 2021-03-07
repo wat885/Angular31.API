@@ -1,4 +1,21 @@
-<p>post-list works!</p>
+
+<form [formGroup]="form">
+    <h3>Add New Post</h3>
+    <div>
+        UserId : <input fromControlName= "userID">
+    </div>
+    <div>
+        Title : <input fromControlName= "title">
+    </div>
+    <div>
+        Body : <input fromControlName= "body">
+    </div>
+    <div>
+        <button (click)="addPost()">Add</button>
+    </div>
+
+</form>
+
 <div *ngFor="let post of posts"
 style="border: 1px solid grey;
 margin: 4px; padding: 4px;"
